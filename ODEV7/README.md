@@ -28,7 +28,3 @@
    LIMIT 1;
    ```
    Bu sorgu, `city` tablosundaki şehirleri `country_id` sütununa göre gruplar ve şehir sayısına göre azalan sırayla sıralar. En fazla şehir barındıran `country_id` değeri ve şehir sayısını verir.
-
-### README.md Örneği:
-
-```markdown
