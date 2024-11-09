@@ -28,27 +28,3 @@
    LIMIT 1;
    ```
    Bu sorgu, `city` tablosundaki şehirleri `country_id` sütununa göre gruplar ve şehir sayısına göre azalan sırayla sıralar. En fazla şehir barındıran `country_id` değeri ve şehir sayısını verir.
-
-### README.md Örneği:
-
-```markdown
-# SQL Sorguları Açıklaması
-
-## Sorguların Açıklamaları
-
-1. **Filmleri Rating Değerlerine Göre Gruplama**
-   - Sorgu: `SELECT rating, COUNT(*) FROM film GROUP BY rating;`
-   - Açıklama: `film` tablosundaki filmleri `rating` değerine göre gruplar ve her bir gruptaki film sayısını listeler.
-
-2. **50’den Fazla Filme Sahip Replacement Cost Değerlerini Getirme**
-   - Sorgu: `SELECT replacement_cost, COUNT(*) FROM film GROUP BY replacement_cost HAVING COUNT(*) > 50;`
-   - Açıklama: `film` tablosundaki filmleri `replacement_cost` sütununa göre gruplar ve yalnızca 50’den fazla filme sahip `replacement_cost` değerlerini ve bu değerlere karşılık gelen film sayılarını listeler.
-
-3. **Customer Tablosundaki Store ID'ye Göre Müşteri Sayısını Getirme**
-   - Sorgu: `SELECT store_id, COUNT(*) FROM customer GROUP BY store_id;`
-   - Açıklama: `customer` tablosundaki `store_id` sütununa göre müşteri sayısını gruplar ve her mağaza (`store_id`) için müşteri sayısını döndürür.
-
-4. **En Fazla Şehir Barındıran Country ID’yi Bulma**
-   - Sorgu: `SELECT country_id, COUNT(*) FROM city GROUP BY country_id ORDER BY COUNT(*) DESC LIMIT 1;`
-   - Açıklama: `city` tablosundaki şehirleri `country_id` sütununa göre gruplar ve şehir sayısına göre azalan sırayla sıralar. En fazla şehir barındıran `country_id` değeri ve şehir sayısını verir.
-```
